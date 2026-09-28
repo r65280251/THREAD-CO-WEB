@@ -1,6 +1,11 @@
-let yourName = prompt("Enter your name:");
+let a = 0
+if (a = 1) {
+    let yourName = prompt("Enter your name:");
+    alert("Welcome Dear " + yourName);
+    a++;
+} else {
+}
 
-alert("Welcome Dear " + yourName);
 
 
 
