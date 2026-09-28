@@ -1,22 +1,7 @@
-let a = 0
-if (a = 1) {
-    let yourName = prompt("Enter your name:");
-    alert("Welcome Dear " + yourName);
-    a++;
-} else {
-}
-
-
-
-
 let btn = document.querySelectorAll(".button");
-
 let item = document.querySelector("#item");
-
 let send = document.querySelector("#send");
-
 let cartCount = Number(sessionStorage.getItem("cartCount")) || 0;
-
 if (item) {
 
     item.textContent = `CART (${cartCount})`;
