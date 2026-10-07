@@ -1,6 +1,10 @@
 let btn = document.querySelectorAll(".button");
 let item = document.querySelector("#item");
 let send = document.querySelector("#send");
+let main = document.querySelector("#main");
+let container = document.querySelector("#container") || main;
+
+
 let cartCount = Number(sessionStorage.getItem("cartCount")) || 0;
 if (item) {
 
@@ -26,10 +30,9 @@ btn.forEach(function(button) {
 
 });
 
-
-
-send.addEventListener("click", function() {
-    alert("MESSAGE HAS BEEN SENT");
-    send.textContent = "send message ✔";
-
-});
+if (send) {
+    send.addEventListener("click", function() {
+        alert("MESSAGE HAS BEEN SENT");
+        send.textContent = "send message ✔";
+    });
+}
